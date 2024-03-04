@@ -48,7 +48,7 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Representative papers are <span class="highlight">highlighted</span>.
+                  I'm interested in computer vision, deep learning, MLLMs, and semi-supervised learning. Most of my research is towards unified large model. Representative papers are <span class="highlight">highlighted</span>.
                 </p>
               </td>
             </tr>
@@ -57,50 +57,49 @@
 
 
 
-    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+    <tr onmouseout="semireward_stop()" onmouseover="semireward_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
-          <source src="images/smerf.mp4" type="video/mp4">
+          <div class="two" id='semireward_image'><video  width=100% muted autoplay loop>
+          <source src="images/semireward.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='images/smerf.jpg' width=100%>
+          <img src='images/semireward.jpg' width=100%>
         </div>
         <script type="text/javascript">
-          function smerf_start() {
-            document.getElementById('smerf_image').style.opacity = "1";
+          function semireward_start() {
+            document.getElementById('semireward_image').style.opacity = "1";
           }
 
-          function smerf_stop() {
-            document.getElementById('smerf_image').style.opacity = "0";
+          function semireward_stop() {
+            document.getElementById('semireward_image').style.opacity = "0";
           }
-          smerf_stop()
+          semireward_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://smerf-3d.github.io/">
-          <span class="papertitle">SMERF: Streamable Memory Efficient Radiance Fields for Real-Time Large-Scene Exploration</span>
+        <a href="https://github.com/Westlake-AI/SemiReward/">
+          <span class="papertitle">SemiReward: A General Reward Model for Semi-supervised Learning</span>
         </a>
         <br>
-		<a href="http://www.stronglyconvex.com/about.html">Daniel Duckworth*</a>,
-		<a href="https://phogzone.com/">Peter Hedman*</a>,
-		<a href="https://creiser.github.io/">Christian Reiser</a>,
-		<a href="">Peter Zhizhin</a>,
-		<a href="">Jean-François Thibert</a>,
-        <a href="https://lucic.ai/">Mario Lučić</a>,
-        <a href="https://szeliski.org/">Richard Szeliski</a>,
-		<strong>Jonathan T. Barron</strong>
+		<a href="https://lupin1998.github.io/">Siyuan Li*</a>,
+		<strong>Jonathan T. Barron</strong>,
+		<a href="">Zedong Wang</a>,
+		<a href="">Fang Wu</a>,
+		<a href="">Zicheng Liu</a>,
+    <a href="">Cheng Tan</a>,
+    <a href="">Stan Z. Li</a>
         <br>
-        <em>arXiv</em>, 2023
+        <em>ICLR</em>, 2024
         <br>
-        <a href="https://smerf-3d.github.io/">project page</a>
+        <a href="https://github.com/Westlake-AI/SemiReward/">project page</a>
         /
-        <a href="https://www.youtube.com/watch?v=zhO8iUBpnCc">video</a>
+        <a href="https://zhuanlan.zhihu.com/p/680998327">zhihu</a>
         /
-        <a href="https://arxiv.org/abs/2312.07541">arXiv</a>
+        <a href="https://arxiv.org/abs/2310.03013">arXiv</a>
         <p></p>
         <p>
-        Distilling a Zip-NeRF into a tiled set of MERFs lets you fly through radiance fields on laptops and smartphones at 60 FPS.
+          A simple and effective pseudo-label evaluation algorithm is designed and combined with the Reward Model, which can be efficiently used in data-centric scenarios.
         </p>
       </td>
     </tr>
