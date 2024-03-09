@@ -103,7 +103,52 @@
         </p>
       </td>
     </tr>
-	
+
+    <tr onmouseout="openmix_stop()" onmouseover="openmix_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='openmix_image'><video  width=100% muted autoplay loop>
+          <source src="images/openmix.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/openmix.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function openmix_start() {
+            document.getElementById('openmix_image').style.opacity = "1";
+          }
+
+          function openmix_stop() {
+            document.getElementById('openmix_image').style.opacity = "0";
+          }
+          openmix_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://github.com/Westlake-AI/openmixup/">
+          <span class="papertitle">SemiReward: A General Reward Model for Semi-supervised Learning</span>
+        </a>
+        <br>
+		<a href="https://lupin1998.github.io/">Siyuan Li*</a>,
+		<a href="">Zedong Wang*</a>,
+		<a href="">Zicheng Liu*</a>,
+		<a href="">Di Wu</a>,
+    <a href="">Cheng Tan</a>,
+    <strong>Weiyang Jin</strong>,
+    <a href="">Stan Z. Li</a>
+        <br>
+        <em>Arxiv</em>, Cited by 24 times
+        <br>
+        <a href="https://github.com/Westlake-AI/openmixup/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2209.04851">arXiv</a>
+        <p></p>
+        <p>
+          A great benchmark for mix-up task bolster the reproducibility of previously gained insights and facilitate a better understanding of mixup properties.
+        </p>
+      </td>
+    </tr>
+
     <!-- <tr onmouseout="recon_stop()" onmouseover="recon_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
